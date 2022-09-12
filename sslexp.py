@@ -86,4 +86,4 @@ except paramiko.AuthenticationException:
        print("\n Incorrect username or password! \n")
 
 except paramiko.ssh_exception.NoValidConnectionsError:
-       print("\n Currently offline! Please turn on PC to continue...\n")
+       print("\n Unable to login to your server! Kindly check server IP... n")
