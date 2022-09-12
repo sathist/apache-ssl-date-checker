@@ -48,7 +48,7 @@ try:
             response = os.system("ping -c 2 " + domains)
             if response == 0:
                 #sslcheck = sp.getoutput("ssl-cert-check -b -s " + domains) 
-                sslcheck = sp.getoutput("/usr/local/bin/ssl-cert-check/ssl-cert-check -b -s " + domains)
+                sslcheck = sp.getoutput("ssl-cert-check -b -s " + domains)
                 split_list = sslcheck.split()
 
                 if split_list[1] == "Expiring":
